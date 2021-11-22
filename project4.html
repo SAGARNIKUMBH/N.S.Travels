@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>Welcome To S.N Travels</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white"
+          ><h4><b>S.N Travels</b></h4></a
+        >
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div
+      id="success"
+      class="alert alert-success alert-dismissible fade"
+      role="alert"
+    >
+      <strong>Success!</strong> Your travel request has been successfully
+      submitted.My empolyee connecting to shortly for you.
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <div
+      id="failure"
+      class="alert alert-danger alert-dismissible fade"
+      role="alert"
+    >
+      <strong>Error!</strong> Your travel request has not been sent due to
+      errors.
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <div class="container">
+      <h1>S.N Travel Dashborad</h1>
+      <form>
+        <div class="form-group">
+          <label for="name"
+            ><h6><b>Username :</b></h6></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter your username"
+          />
+          <small id="namevalid" class="form-text text-muted invalid-feedback">
+            Your username must be 2-10 characters long and should not start with
+            a number.
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="email"
+            ><h6><b>Email address :</b></h6></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <small id="emailvalid" class="form-text text-muted invalid-feedback">
+            Your email must be a valid email
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="car"
+            ><h6><b>Select your car :</b></h6></label
+          >
+
+          <select class="form-control" id="car">
+            <option value="selected">Select</option>
+            <option>Maruti_Swift</option>
+            <option>Toyota_Innova</option>
+            <option>Ford_Titanium</option>
+            <option>Verna_1.6</option>
+            <option>Maruti_Ertiga</option>
+            <option>Honda_City</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="car"
+            ><h6><b>Enter Your Passenger :</b></h6></label
+          >
+          <select class="form-control" id="car">
+            <option>Driver must be add your set</option>
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="address"
+            ><h6><b>Enter your address :</b></h6></label
+          >
+          <textarea
+            class="form-control"
+            name="address"
+            id="address"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="address"
+            ><h6><b>Enter your phone number</b></h6></label
+          >
+          <input class="form-control" name="phone" id="phone" rows="3" />
+          <small id="emailvalid" class="form-text text-muted invalid-feedback">
+            Your phone number must be 10 digit long
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1"
+            ><h6><b>Any other message...</b></h6></label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+        <button id="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="project4.js"></script>
+  </body>
+</html>
