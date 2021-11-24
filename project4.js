@@ -65,6 +65,7 @@ submit.addEventListener("click", (e) => {
 
   console.log("You clicked on submit");
   console.log(validEmail, validUser, validPhone);
+
   if (validEmail && validUser && validPhone) {
     let failure = document.getElementById("failure");
     let success = document.getElementById("success");
@@ -74,7 +75,10 @@ submit.addEventListener("click", (e) => {
       console.log(3434);
       $("#success").hide();
     }, 2000);
-
+    window.localStorage.setItem("email", email.value);
+    window.localStorage.setItem("phone", phone.value);
+    window.localStorage.setItem("name", name.value);
+    document.getElementById("addForm").reset();
     $("#failure").hide();
     $("#success").show();
     // $("success").clear();
@@ -82,7 +86,7 @@ submit.addEventListener("click", (e) => {
     console.log(
       "One of Phone, email or user are not valid. Hence not submitting the form. Please correct the errors and try again"
     );
-
+    // JSON.parse(window.localStorage.getItem('validEmail && validUser && validPhone'));
     let failure = document.getElementById("failure");
     failure.classList.add("show");
     setTimeout(() => {
@@ -92,4 +96,10 @@ submit.addEventListener("click", (e) => {
     $("#success").hide();
     $("#failure").show();
   }
+});
+
+let searchText = document.getElementsById("searchText");
+searchText.addEventListener("input", function () {
+  let inputVal = search.value;
+  console.log("Input search vaild", inputVal);
 });
